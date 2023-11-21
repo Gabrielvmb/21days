@@ -1,4 +1,4 @@
-/*
+
 let numero = 8;
 let array = [21, 8, 9, 6, 4, 8, 15, 4, 3, 5];
 
@@ -7,64 +7,64 @@ for (let i = 0; i < array.length; i++) {
     console.log(`Número aparece no índice: ${i}`);
   }
 }
-*/
-/*
-let array = [];
+
+
+let array2 = [];
 
 for (let i = 0; i < 5; i++) {
   let numero = Number(prompt(`Me de seu ${i + 1}° número`));
-  array[i] = numero;
+  array2[i] = numero;
 }
-console.log(array);
+console.log(array2);
 
-let tamanhoArray = array.length;
+let tamanhoArray = array2.length;
 
 for (let i = 0; i < tamanhoArray / 2; i++) {
-  //Trocar os elementos usando uma variável temporaria
-  let temp = array[i];
-  array[i] = array[tamanhoArray - 1 - i];
-  array[tamanhoArray - 1 - i] = temp;
+  //Trocar os elementos usando uma variável temporaria.
+  let temp = array2[i];
+  array2[i] = array2[tamanhoArray - 1 - i];
+  array2[tamanhoArray - 1 - i] = temp;
 }
 
-console.log(array);
-*/
+console.log(array2);
 
 
 
-/*
-let array = [];
+
+
+let array3 = [];
 let numUser = Number(prompt('Quantos números você deseja colocar no array?'));
 
 for (let i = 0; i < numUser; i++) {
   let numero = Number(prompt(`Me de seu ${i + 1}° número`));
-  array[i] = numero;
+  array3[i] = numero;
 }
-console.log(array);
+console.log(array3);
 
-let tamanhoArray = array.length;
+let tamanhoArray2 = array3.length;
 
-for (let j = 0; j < tamanhoArray / 2; j++) {
-  let temp = array[j];
-  array[j] = array[tamanhoArray - 1 - j]
-  array[tamanhoArray - 1 - j] = temp;
+for (let j = 0; j < tamanhoArray2 / 2; j++) {
+  let temp = array3[j];
+  array3[j] = array[tamanhoArray2 - 1 - j]
+  array3[tamanhoArray2 - 1 - j] = temp;
 }
 
-console.log(array);
-*/
+console.log(array3);
 
-let arrayD = [];
-let arrayInvertidoD = [];
-let quantidade = parseInt(prompt('Digite a quantidade de números para inserir no array'));
 
-for(let i = 0; i < quantidade; i++) {
-  let numero = parseInt(prompt(`Digite o ${i + 1}° número`));
-  arrayD[i] = numero;
+
+let currentNum = parseInt(prompt('Digite um número inteiro e positivo ae:'));
+
+let arrayFibonacci = [];
+
+let previousNum = currentNum - 1;
+
+
+arrayFibonacci[0] = previousNum;
+arrayFibonacci[1] = currentNum;
+
+for (let i = 2; i <= 10; i++) {
+  arrayFibonacci[i] = arrayFibonacci[i - 1] + arrayFibonacci[i - 2];
 }
-console.log(`Array original ${arrayD}`);
+console.log(arrayFibonacci);
 
-let contador = quantidade - 1;
-for (let j = 0; j < 5; j++) {
-  arrayInvertidoD[j] = arrayD[contador];
-  contador--;
-}
-console.log(`Array invertido: ${arrayInvertidoD}`);
